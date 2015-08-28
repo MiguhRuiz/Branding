@@ -1,0 +1,23 @@
+{
+  "name": "miguhruiz",
+  "version": "6.0.0",
+  "description": "Full Stack JavaScript Developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Galaxy42/Branding.git"
+  },
+  "author": "Miguh Ruiz",
+  "license": "NLPL",
+  "bugs": {
+    "url": "https://github.com/Galaxy42/Branding/issues"
+  },
+  "homepage": "https://github.com/Galaxy42/Branding#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "request": "^2.61.0"
+  }
+}
