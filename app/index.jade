@@ -1,0 +1,35 @@
+doctype html
+html(lang="es_ES")
+  head
+    meta(charset="utf-8")
+    title Miguh Ruiz | Full Stack JavaScript Developer
+  body
+    nav
+      div.branding
+        img(src="http://i.imgur.com/2AKdAXQ.jpg", class="branding-image")
+        p.branding-title Miguh Ruiz
+        p.branding-description Full Stack JavaScript Developer
+    section.page
+      article.calltoaction
+        h1.branding-call Full Stack JavaScript Developer
+        button(class="branding-button", value="Contáctame")
+      article.stacks
+        p.stacks-introduction Actualmente trabajo con estos stacks
+        template.stack
+          img(src="", class="stack-image")
+          p.stack-title
+      article.posts
+        p.posts-introduction Últimamente he escrito sobre
+        template.post
+          img(src="", class="post-image")
+          a(href="", class="post-title")
+    footer
+      div.branding
+        img(src="http://i.imgur.com/2AKdAXQ.jpg", class="branding-image")
+        p.branding-title Miguh Ruiz
+        p.branding-description Full Stack JavaScript Developer
+      div.icons
+        a(href="http://blog.miguhruiz.xyz", class="icon-newspaper blog")
+        a(href="https://github.com/Galaxy42", class="icon-github github")
+        a(href="https://twitter.com/MiguhRuiz", class="icon-twitter twitter")
+    script(src="./public/js/build.js")

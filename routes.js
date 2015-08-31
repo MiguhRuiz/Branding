@@ -23,7 +23,7 @@ function ajaxCallback(error, response, body) {
 }
 
 module.exports.start =  function (req, res) {
-  res.send('Hello World')
+  res.render('index')
 }
 
 module.exports.getPosts = function (req, res) {
