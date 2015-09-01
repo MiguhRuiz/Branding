@@ -4,7 +4,8 @@
   "description": "Full Stack JavaScript Developer",
   "main": "index.js",
   "scripts": {
-    "build": "browserify ./app/public/js/index.js -c -t babelify --outfile ./app/public/js/build.js"
+    "build": "browserify ./app/public/js/index.js -c -t babelify --outfile ./app/public/js/build.js",
+    "styl": "stylus ./app/public/css -c -w"
   },
   "repository": {
     "type": "git",
