@@ -5,9 +5,56 @@
       "Icon": "/public/images/html.png"
     },
     {
-      "Name": "HTML con Jade",
-      "Icon": "/public/images/html.png"
+      "Name": "CSS con Stylus",
+      "Icon": "/public/images/css.png"
+    },
+    {
+      "Name": "JavaScript(ES5 -  ES6)",
+      "Icon": "/public/images/js.png"
+    },
+    {
+      "Name": "jQuery y AJAX",
+      "Icon": "/public/images/jquery.png"
+    },
+    {
+      "Name": "React.JS",
+      "Icon": "/public/images/react.png"
+    },
+    {
+      "Name": "Node.js - Io.js",
+      "Icon": "/public/images/node.png"
+    },
+    {
+      "Name": "Express.js",
+      "Icon": "/public/images/express.png"
+    },
+    {
+      "Name": "MongoDB",
+      "Icon": "/public/images/mongo.png"
+    },
+    {
+      "Name": "Api Rest",
+      "Icon": "/public/images/api.png"
+    },
+    {
+      "Name": "Git como SCV",
+      "Icon": "/public/images/git.png"
+    },
+    {
+      "Name": "GitHub y GitLab",
+      "Icon": "/public/images/github.png"
+    },
+    {
+      "Name": "Ghost",
+      "Icon": "/public/images/ghost.png"
+    },
+    {
+      "Name": "Wordpress",
+      "Icon": "/public/images/wp.png"
+    },
+    {
+      "Name": "Administración de servidores",
+      "Icon": "/public/images/server.png"
     }
-
   ]
 }
