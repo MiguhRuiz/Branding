@@ -19,17 +19,18 @@ html(lang="es_ES")
         h1.branding-call JavaScript Developer
         div.branding-button
           a(class="branding-btn-call", href="http://blog.miguhruiz.xyz/contacto") Contáctame
-      article.stacks
+      div.stacks-container
         p.stacks-introduction Actualmente trabajo con estos stacks
-        template.stack
-          .stack
-            img(src="", class="stack-image")
-          p.stack-title
-      article.posts
-        // p.posts-introduction Últimamente he escrito sobre
-        template.post
-          img(src="", class="post-image")
-          a(href="", class="post-title")
+        article.stacks
+          template.stack
+            .stack
+              img(src="", class="stack-image")
+              p.stack-title
+        article.posts
+          // p.posts-introduction Últimamente he escrito sobre
+          template.post
+            img(src="", class="post-image")
+            a(href="", class="post-title")
     footer
       div.branding
         img(src="#{Avatar}", class="branding-image")

@@ -9,7 +9,7 @@
       "Icon": "/public/images/css.png"
     },
     {
-      "Name": "JavaScript(ES5 -  ES6)",
+      "Name": "JavaScript(ES5 - ES6)",
       "Icon": "/public/images/js.png"
     },
     {
@@ -53,7 +53,7 @@
       "Icon": "/public/images/wp.png"
     },
     {
-      "Name": "Administración de servidores",
+      "Name": "DevOps",
       "Icon": "/public/images/server.png"
     }
   ]
