@@ -1,19 +1,18 @@
 'use strict'
 
 import express from 'express'
-import request from 'request'
+import ghost from 'ghost-client'
+import conf from './conf.json'
 import db from './db/skills.json'
 
 const app = express()
 let data;
 let json = {}
 
-const options = {
-  url: 'http://blog.miguhruiz.xyz/ghost/api/v0.1/posts?limit=4/',
-  headers: {
-    'Authorization': 'tokenultrasecreto'
-  }
-}
+const Client = ghost.createClient({
+  endpoint: conf.url,
+  token: conf.token
+})
 
 function ajaxCallback(error, response, body) {
   if (error) {
@@ -27,9 +26,11 @@ module.exports.start =  function (req, res) {
 }
 
 module.exports.getPosts = function (req, res) {
-  request(options, ajaxCallback)
-  res.setHeader('Content-Type', 'application/json')
-  res.send(data)
+  Client.posts(function (err, posts) {
+    if (err) console.log(err)
+    res.setHeader('Content-Type', 'application/json')
+    res.send(posts)
+  })
 }
 
 module.exports.getSkills = function (req, res) {

@@ -19,8 +19,8 @@
   "homepage": "https://github.com/Galaxy42/Branding#readme",
   "dependencies": {
     "express": "^4.13.3",
-    "jade": "^1.11.0",
-    "request": "^2.61.0"
+    "ghost-client": "1.2.1",
+    "jade": "^1.11.0"
   },
   "devDependencies": {
     "babelify": "^6.3.0",
