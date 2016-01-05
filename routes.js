@@ -2,7 +2,6 @@
 
 import express from 'express'
 import request from 'request'
-import db from './db/skills.json'
 
 const app = express()
 let data;
@@ -30,8 +29,4 @@ module.exports.getPosts = function (req, res) {
   request(options, ajaxCallback)
   res.setHeader('Content-Type', 'application/json')
   res.send(data)
-}
-
-module.exports.getSkills = function (req, res) {
-  res.send(db)
 }
