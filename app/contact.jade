@@ -6,39 +6,14 @@ html(lang="es_ES")
     meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
     link(rel="stylesheet", href="./public/css/index.css")
     link(rel="shortcut icon", type="image/png", href="#{Avatar}")
-    title Miguh Ruiz | Full Stack JavaScript Developer
+    title Contacta a Miguh | Full Stack JavaScript Developer
   body
     nav
       div.branding
         img(src="#{Avatar}", class="branding-image")
         p.branding-title Miguh Ruiz
         p.branding-description Full Stack JavaScript Developer
-    section.page
-      article.calltoaction
-        h1.branding-call Full Stack JavaScript Developer
-        div.branding-button
-          a(class="branding-btn-call", href="/contacto") Contáctame
-      div.goals-container
-        article.goal
-          p.goal-number 55
-          span.icon-repo
-          p.goal-description repositorios públicos y privados en GitHub
-        article.goal
-          p.goal-number 1
-          span.icon-box
-          p.goal-description módulos publicados en 
-            a(href="https://npmjs.com/~miguhruiz", target="_blank") NPM
-        article.goal
-          p.goal-number 21
-          span.icon-certificate
-          p.goal-description certificaciones de cursos en 
-            a(href="https://es.linkedin.com/pub/miguh-ruiz/109/390/834", target="_blank") LinkedIn
-      div.posts-container
-        article.posts
-          // p.posts-introduction Últimamente he escrito sobre
-          template.post
-            img(src="", class="post-image")
-            a(href="", class="post-title")
+    div(class="typeform-widget", data-url="https://miguhruiz.typeform.com/to/A17qAO", data-text="Contact Form", style="width:100%;height:500px;")
     footer
       div.branding
         img(src="#{Avatar}", class="branding-image")
@@ -50,4 +25,5 @@ html(lang="es_ES")
         a(href="https://twitter.com/MiguhRuiz", class="icon-twitter twitter", target="_blank")
     script
       include ./public/js/analytics.js
-    script(src="./public/js/build.js")
+    script
+      include ./public/js/form.js

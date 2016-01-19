@@ -10,6 +10,7 @@ app.set('views', __dirname + '/app')
 app.set('view engine', 'jade')
 
 app.get('/', router.start)
+app.get('/contacto', router.contact)
 app.get('/latest-posts', router.getPosts)
 
 app.listen(5000, function (port) {

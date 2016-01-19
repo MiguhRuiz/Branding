@@ -25,6 +25,10 @@ module.exports.start =  function (req, res) {
   res.render('index')
 }
 
+module.exports.contact = function (req, res) {
+  res.render('contact')
+}
+
 module.exports.getPosts = function (req, res) {
   request(options, ajaxCallback)
   res.setHeader('Content-Type', 'application/json')
