@@ -8,15 +8,6 @@ function activateTemplate(id) {
   return document.importNode(t.content, true)
 }
 
-function renderSkills(badge, name) {
-  let clone = activateTemplate('.stack')
-
-  clone.querySelector('.stack-image').src = badge
-  clone.querySelector('.stack-title').innerHTML = name
-
-  $('.stacks').append(clone)
-}
-
 function renderPost(thumbnail, name, url) {
   const post_url = BLOG_URL + url
   let clone = activateTemplate('.post')
@@ -27,14 +18,6 @@ function renderPost(thumbnail, name, url) {
 
   $('.posts').append(clone)
 }
-
-$.getJSON('/data/skills', function (data) {
-  const skills = data.data
-
-  skills.map((skill) => {
-      renderSkills(skill.Icon, skill.Name)
-    })
-})
 
 $.getJSON('/latest-posts', function (data) {
   const posts = data.posts
