@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify ./app/public/js/index.js -c -t babelify --outfile ./app/public/js/build.js",
-    "styl": "stylus ./app/public/css/*.styl -c -w"
+    "styl": "stylus ./app/public/css/index.styl -c -w"
   },
   "repository": {
     "type": "git",
