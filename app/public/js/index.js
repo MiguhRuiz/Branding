@@ -19,10 +19,10 @@ function renderPost(thumbnail, name, url) {
   $('.posts').append(clone)
 }
 
-$.getJSON('/latest-posts', function (data) {
-  const posts = data.posts
-
-  posts.map((post) => {
-    renderPost(post.image, post.title, post.url)
-  })
-})
+// $.getJSON('/latest-posts', function (data) {
+//   const posts = data.posts
+//
+//   posts.map((post) => {
+//     renderPost(post.image, post.title, post.url)
+//   })
+// })
